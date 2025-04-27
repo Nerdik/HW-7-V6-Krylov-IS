@@ -93,7 +93,8 @@ void ex2()
 
     size_t length = 1;
     char* newStr = new char[length];
-    newStr[0] = '\0';
+    char* initPtr = newStr;
+    *initPtr = '\0';
 
     char* ptr = str;
 
@@ -136,7 +137,7 @@ void ex2()
 int main()
 {
     // Exercise 1.
-    ex1();
+    // ex1();
 
     // Exercise 2.
     ex2();
